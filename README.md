@@ -1,2 +1,0 @@
-# bitbash
-cool little app
