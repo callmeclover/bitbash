@@ -3,6 +3,8 @@ on:
     branches:
     - main
 ---
+jobs:
+  wiki_action:
 - name: Wiki Action
   # You may pin to the exact commit or the version.
   # uses: ineshbose/wiki-action@1c2f272a66f2dbac4192de6760034d1f534d9af6
