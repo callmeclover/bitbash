@@ -1,2 +1,20 @@
-- name: Wiki Sync
-  uses: JoeIzzard/ghaction-wiki-sync@v1
+on:
+  push:
+    branches:
+    - main
+---
+- name: Wiki Action
+  # You may pin to the exact commit or the version.
+  # uses: ineshbose/wiki-action@1c2f272a66f2dbac4192de6760034d1f534d9af6
+  uses: ineshbose/wiki-action@v1
+  with:
+    # GitHub token
+    GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # Wiki directory
+    WIKI_DIR: # optional, default is wiki
+    # Exclude directories/files from wiki (also from sidebar)
+    WIKI_IGNORE: # optional, default is 
+    # Build sidebar
+    AUTO_SIDEBAR: # optional
+    # Exclude directories/files from sidebar
+    SIDEBAR_IGNORE: # optional, default is 
